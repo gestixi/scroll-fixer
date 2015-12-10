@@ -112,7 +112,7 @@
     this._initialZIndex = $element.css('z-index');
 
     this._placeholder = $('<div class="scroll-fixer-placeholder" style="position: '+initialCssPosition+'; z-index: -10; pointer-events: none;"></div>');
-    $element.after(this._placeholder);
+    $element.before(this._placeholder);
   }
 
 
@@ -157,13 +157,10 @@
       // Ignore if the user scroll overflow the page
       if (scrollTop < 0 || scrollTop > $document.height()) return;
 
-      var windowHash = $window.height() + ' ' + $window.width() + ' ' + scrollTop;
-      if (this._windowHash === windowHash) return;
-      this._windowHash = windowHash;
-
-      var fixedElementsHeight = this.fixedElementsHeight(this);
-      
-      if (scrollTop > 0 && scrollTop + fixedElementsHeight >= this._initialTop && this.options.canFix.call(this)) {
+      if (scrollTop > 0 && 
+        scrollTop + this.fixedElementsHeight(this) >= this._placeholder.offset().top && 
+        this.options.canFix.call(this)
+      ) {
         this.fixElement(firstTime);
       }
       else {
