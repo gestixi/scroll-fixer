@@ -1,0 +1,28 @@
+{
+  "name": "scroll-fixer",
+  "description": "jQuery plugin to fix element when scrolling down.",
+  "main": "scroll-fixer.js",
+  "authors": [
+    "GestiXi <nicolas@gestixi.com> (https://www.gestixi.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "fixe",
+    "fixed",
+    "scroll",
+    "stick",
+    "sticky",
+    "element",
+    "visible",
+    "waypoints"
+  ],
+  "homepage": "https://github.com/gestixi/scroll-fixer",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
