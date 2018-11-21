@@ -29,7 +29,7 @@
         $(window).on('resize', function(e) { data.scheduleUpdate(); });
 
         data.didScroll(true);
-      } 
+      }
       else {
         data.didScroll();
       }
@@ -78,7 +78,7 @@
 
       Note that if two elements are stick together, the box shadow will
       only be apply to the last element.
-      
+
       @type String
       @default: '0 2px 10px rgba(0,0,0,0.25)'
       @since Version 1.0
@@ -157,8 +157,8 @@
       // Ignore if the user scroll overflow the page
       if (scrollTop < 0 || scrollTop > $document.height()) return;
 
-      if (scrollTop > 0 && 
-        scrollTop + this.fixedElementsHeight(this) >= this._placeholder.offset().top && 
+      if (scrollTop > 0 &&
+        scrollTop + this.fixedElementsHeight(this) >= this._placeholder.offset().top &&
         this.options.canFix.call(this)
       ) {
         this.fixElement(firstTime);
@@ -173,7 +173,7 @@
     */
     fixElement: function(firstTime) {
       var $element = this.$element,
-        options = this.options,  
+        options = this.options,
         fixedElements = this.fixedElements,
         fixedElementsHeight = this.fixedElementsHeight(this),
         scrollTop = $(window).scrollTop();
@@ -236,7 +236,7 @@
     /**
       Compute the height of the fixed elements before the one
       passed in argument
-      
+
       @returns {Number}
     */
     fixedElementsHeight: function() {
@@ -290,7 +290,7 @@
 
     /**
       Return true if the element is visible on screen
-      
+
       @param jQuery element
       @returns {Boolean}
     */
@@ -310,7 +310,7 @@
       Schedule an update.
     */
     scheduleUpdate: function() {
-      if (this._didScheduleUpdate) return; 
+      if (this._didScheduleUpdate) return;
 
       if (window.requestAnimationFrame) {
         var that = this;
