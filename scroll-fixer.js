@@ -1,9 +1,9 @@
 // ==========================================================================
 // Project:     Scroll Fixer
 // Description: jQuery plugin to fix element when scrolling down
-// Copyright:   ©2013-2015 GestiXi
+// Copyright:   ©2012-2018 GestiXi
 // License:     Licensed under the MIT license (see LICENCE)
-// Version:     1.0
+// Version:     1.0.1
 // Author:      Nicolas BADIA
 // ==========================================================================
 

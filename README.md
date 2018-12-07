@@ -21,11 +21,11 @@ form-submitter depends on jQuery. To use it, include this in your page :
 
 ## Usage
 
-    
+
     $(document).ready(function() {
       $('.menu').scrollFixer();
     });
-    
+
 
 
 ------
@@ -106,7 +106,7 @@ The DOM element.
 
 Example:
 
-    $('form').formSubmitter({ 
+    $('form').formSubmitter({
       didFix: function(evt) {
         console.log(this.element);
       }
@@ -132,4 +132,4 @@ The options object.
 
 ## Copyright and license
 
-Copyright 2013-2015 GestiXi under [The MIT License (MIT)](LICENSE).
+Copyright 2012-2018 GestiXi under [The MIT License (MIT)](LICENSE).

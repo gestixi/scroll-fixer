@@ -1,6 +1,6 @@
 {
   "name": "scroll-fixer",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "jQuery plugin to fix element when scrolling down.",
   "main": "scroll-fixer.js",
   "scripts": {
